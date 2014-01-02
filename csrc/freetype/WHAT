@@ -1,0 +1,7 @@
+freetype 2.5.0.1 from http://download.savannah.gnu.org/releases/freetype/ (License is FTL/BSD)
+
+directories:
+	./custom    customization headers
+	./include   original include dir in full
+	./src       original src dir stripped
+
