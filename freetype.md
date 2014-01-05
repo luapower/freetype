@@ -4,8 +4,6 @@ tagline:     freetype2 ffi binding
 category:    Text Rendering
 ---
 
-v1.0 | LuaJIT 2
-
 ## `local freetype = require'freetype'`
 
 A ffi binding of [FreeType 2].
