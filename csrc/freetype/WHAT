@@ -1,4 +1,4 @@
-freetype 2.5.0.1 from http://download.savannah.gnu.org/releases/freetype/ (License is FTL/BSD)
+freetype 2.5.0.1 from http://download.savannah.gnu.org/releases/freetype/ (FTL/BSD License)
 
 directories:
 	./custom    customization headers
