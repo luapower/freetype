@@ -1,7 +1,6 @@
 ---
 project:     freetype
 tagline:     freetype2 ffi binding
-category:    Text Rendering
 ---
 
 ## `local freetype = require'freetype'`
