@@ -4,4 +4,3 @@ directories:
 	./custom    customization headers
 	./include   original include dir in full
 	./src       original src dir stripped
-
