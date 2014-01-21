@@ -11,7 +11,7 @@ A ffi binding of [FreeType 2].
 
 ## API
 
-Look at the bottom of `freetype.lua` for method names for each object type.
+Look at the bottom of the source file for method names for each object type.
 Use the demo and test files for usage examples.
 
 Use the [FreeType docs] for knowledge about fonts and rasterization.
