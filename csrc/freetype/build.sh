@@ -5,7 +5,7 @@
 [[ "$(uname)" == *Linux* ]] && libfile=../../bin/linux32/libfreetype.so
 [[ "$(uname)" == *MINGW* ]] && libfile=../../bin/mingw32/freetype.dll
 
-args=(gcc $CFLAGS -shared -o "$libfile" -Icustom -Iinclude -DFT2_BUILD_LIBRARY
+args=(gcc -O2 -s -static-libgcc -shared -o "$libfile" -Icustom -Iinclude -DFT2_BUILD_LIBRARY
 
       src/base/ftsystem.c
       src/base/ftinit.c
