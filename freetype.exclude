@@ -1,0 +1,14 @@
+*
+!/bin/
+!/csrc/
+!/bin/mingw32/
+!/bin/linux32/
+!/media/
+
+!/freetype*
+!/bin/mingw32/freetype*
+!/bin/linux32/libfreetype*
+!/csrc/freetype/
+!/csrc/freetype/**
+!/media/fonts/
+!/media/fonts/**
