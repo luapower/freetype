@@ -74,24 +74,27 @@ local function inspect_face(lib, facename)
 	end
 
 	local bitmap_size_fields = {'height','width','size','x_ppem','y_ppem'}
+	local bitmap_size_decoders = {height = tonumber, width = tonumber, size = tonumber, x_ppem = tonumber, y_ppem = tonumber}
 	local charmap_fields = {'encoding','platform_id','encoding_id'}
 	local charmap_decoders = {encoding = s4}
 	local bbox_fields = {'xMin','yMin','xMax','yMax'}
+  local bbox_decoders = {xMin = tonumber, yMin = tonumber, xMax = tonumber, yMax = tonumber}
 	local metrics_fields = {'x_ppem','y_ppem','x_scale','y_scale','ascender','descender','height','max_advance'}
+	local metrics_fields = { x_ppem = tonumber, y_ppem = tonumber, x_scale = tonumber, y_scale = tonumber, ascender = tonumber, descender = tonumber, height = tonumber, max_advance = tonumber}
 	local size_fields = {'metrics'}
-	local size_decoders = {metrics = function(m) return struct(m, metrics_fields, nil, '   ') end}
+	local size_decoders = {metrics = function(m) return struct(m, metrics_fields, metrics_decoders, '   ') end}
 	print('num_faces:           ', face.num_faces)
-	print('face_index:          ', face.face_index)
-	print('face_flags:          ', flags(face.face_flags, face_flag_names))
-	print('style_flags:         ', flags(face.style_flags, style_flag_names))
+	print('face_index:          ', tonumber(face.face_index))
+	print('face_flags:          ', flags(tonumber(face.face_flags), face_flag_names))
+	print('style_flags:         ', flags(tonumber(face.style_flags), style_flag_names))
 	print('num_glyphs:          ', face.num_glyphs)
 	print('familiy_name:        ', ffi.string(face.family_name))
 	print('style_name:          ', ffi.string(face.style_name))
 	print('num_fixed_sizes:     ', face.num_fixed_sizes)
-	print('available_sizes:     ', struct_array(face.available_sizes, face.num_fixed_sizes, bitmap_size_fields))
+	print('available_sizes:     ', struct_array(face.available_sizes, face.num_fixed_sizes, bitmap_size_fields, bitmap_size_decoders))
 	print('num_charmaps:        ', face.num_charmaps)
 	print('charmaps:            ', struct_array(face.charmaps, face.num_charmaps, charmap_fields, charmap_decoders))
-	print('bbox:                ', struct(face.bbox, bbox_fields))
+	print('bbox:                ', struct(face.bbox, bbox_fields, bbox_decoders))
 	print('units_per_EM:        ', face.units_per_EM)
 	print('ascender:            ', face.ascender)
 	print('descender:           ', face.descender)
