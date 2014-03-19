@@ -1,1 +1,1 @@
-gcc -O2 `./files.sh` -shared -o ../../bin/osx64/libfreetype.dylib -Icustom -Iinclude -DFT2_BUILD_LIBRARY
+gcc -arch x86_64 -O2 `./files.sh` -shared -o ../../bin/osx64/libfreetype.dylib -Icustom -Iinclude -DFT2_BUILD_LIBRARY
