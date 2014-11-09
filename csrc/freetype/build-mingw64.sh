@@ -1,1 +1,1 @@
-gcc -O2 -s -static-libgcc `./files.sh` -shared -o ../../bin/mingw64/freetype.dll -Icustom -Iinclude -DFT2_BUILD_LIBRARY
+P=mingw64 L="-s -static-libgcc" D=freetype.dll A=freetype.a ./build.sh

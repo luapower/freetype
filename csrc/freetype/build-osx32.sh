@@ -1,1 +1,2 @@
-gcc -arch i386 -O2 `./files.sh` -shared -install_name @loader_path/libfreetype.dylib -o ../../bin/osx32/libfreetype.dylib -Icustom -Iinclude -DFT2_BUILD_LIBRARY
+P=osx32 C="-arch i386" L="-arch i386 -install_name @loader_path/libfreetype.dylib" \
+	D=libfreetype.dylib A=libfreetype.a ./build.sh

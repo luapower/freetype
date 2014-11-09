@@ -1,1 +1,1 @@
-gcc -O2 -s -static-libgcc -fPIC `./files.sh` -shared -o ../../bin/linux64/libfreetype.so -Icustom -Iinclude -DFT2_BUILD_LIBRARY
+P=linux64 C=-fPIC L="-s -static-libgcc" D=libfreetype.so A=libfreetype.a ./build.sh
