@@ -25,5 +25,5 @@ illegal to use this binary in your country. If unsure, compile your own.
 
 
 [FreeType 2]:    http://freetype.org/freetype2/
-[FreeType docs]: http://www.freetype.org/freetype2/documentation.html
+[FreeType docs]: http://www.freetype.org/freetype2/docs/documentation.html
 [screenshot]:    screenshots/freetype_demo.png
