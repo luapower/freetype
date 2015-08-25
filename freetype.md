@@ -1,5 +1,4 @@
 ---
-project: freetype
 tagline: freetype font engine
 ---
 
