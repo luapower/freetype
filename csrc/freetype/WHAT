@@ -1,4 +1,5 @@
 freetype 2.9.1 from http://download.savannah.gnu.org/releases/freetype/ (FTL/BSD License)
+requires: libpng, harfbuzz
 
 directories:
 	./custom    customization headers
