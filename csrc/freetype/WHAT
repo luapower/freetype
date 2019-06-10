@@ -11,4 +11,8 @@ harfbuzz, so do a build of freetype first with NO_HARFBUZZ=1 env var set
 if you don't have a harfbuzz binary, in order to build harfbuzz so that
 you can build freetype again with harfbuzz.
 
-demos depend on fonts-amiri
+Demos depend on
+	fonts-amiri
+	fonts-dejavuserif
+	fonts-fixedsys
+	fonts-fireflysung
