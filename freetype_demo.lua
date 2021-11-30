@@ -166,7 +166,7 @@ local faces = {
 	['Amiri Regular'] = 'media/fonts/amiri-regular.ttf',
 	['DejaVu Serif']  = 'media/fonts/DejaVuSerif.ttf',
 	['Firefly Sung']  = 'media/fonts/fireflysung.ttf',
-	['Fixedsys300']  = 'media/fonts/FSEX300.ttf',
+	['Fixedsys300']  = 'FSEX300.ttf',
 	--['MaterialIcons'] = 'media/fonts/MaterialIcons-Regular.ttf',
 	--['Font Awesome'] = 'fa-regular-400.ttf',
 }
